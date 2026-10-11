@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 15:25:47 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/14 14:59:46 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Applies function f to each character of string s to create a new mapped string.*/
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char			*res;

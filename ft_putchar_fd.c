@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 18:02:41 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/13 14:13:46 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Outputs the character c to the given file descriptor fd.*/
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

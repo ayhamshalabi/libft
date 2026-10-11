@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/07 19:46:53 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/14 15:10:49 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Safely copies n bytes from memory area src to dest, handling overlapping regions.*/
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;

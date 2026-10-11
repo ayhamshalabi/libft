@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/07 11:48:37 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/13 14:13:43 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Locates the first occurrence of character c in string s.*/
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)

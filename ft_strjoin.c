@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 10:51:17 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/14 15:04:48 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Allocates and returns a new string resulting from the concatenation of s1 and s2.*/
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;

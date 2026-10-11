@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/09 18:11:13 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/13 14:13:50 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Scans the first n bytes of memory area s for the first occurrence of byte c.*/
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*ptr;

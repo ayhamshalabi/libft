@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 10:58:33 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/14 15:04:48 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Checks whether character c is present in the character set string set.*/
 static int	in_set(char c, char const *set)
 {
 	size_t	i;
@@ -26,6 +15,7 @@ static int	in_set(char c, char const *set)
 	return (0);
 }
 
+/*Counts consecutive leading characters of string s1 that exist in set.*/
 static size_t	front_count(char const *s1, char const *set)
 {
 	size_t	count;
@@ -41,6 +31,7 @@ static size_t	front_count(char const *s1, char const *set)
 	return (count);
 }
 
+/*Counts consecutive trailing characters of string s1 that exist in set.*/
 static size_t	back_count(char const *s1, char const *set)
 {
 	size_t	count;
@@ -56,6 +47,7 @@ static size_t	back_count(char const *s1, char const *set)
 	return (count);
 }
 
+/*Allocates and returns a copy of s1 with characters in set trimmed from start and end.*/
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*ptr;

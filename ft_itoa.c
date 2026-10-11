@@ -1,17 +1,6 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 12:20:44 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/13 14:14:00 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
+/*Calculates the total character length required to represent integer n in decimal, including sign.*/
 static size_t	num_len(long n)
 {
 	size_t	len;
@@ -30,6 +19,7 @@ static size_t	num_len(long n)
 	return (len);
 }
 
+/*Converts the integer n into a null-terminated string representation.*/
 char	*ft_itoa(int n)
 {
 	char	*res;

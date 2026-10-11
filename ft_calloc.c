@@ -1,28 +1,17 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: ayhshala <ayham.shalabi@learner.42.tech    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/10 01:54:56 by ayhshala          #+#    #+#             */
-/*   Updated: 2026/09/13 14:50:04 by ayhshala         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+﻿#include "libft.h"
 
-#include "libft.h"
-
-void	*ft_calloc(size_t n, size_t size)
+/*Allocates memory for an array of nmemb elements of size bytes each and sets it to zero.*/
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 	size_t	total;
 
-	if (n != 0 && size > SIZE_MAX / n)
+	if (nmemb != 0 && size > SIZE_MAX / nmemb)
 		return (NULL);
-	if (n == 0 || size == 0)
+	if (nmemb == 0 || size == 0)
 		total = 1;
 	else
-		total = n * size;
+		total = nmemb * size;
 	ptr = malloc(total);
 	if (!ptr)
 		return (NULL);
